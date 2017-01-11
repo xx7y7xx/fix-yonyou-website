@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Fix Yonyou Website",
+  "description": "解决用友一些网站的浏览器兼容问题",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://192.168.8.222/yer/core/login/login.jsp"
+      ],
+      "js": [
+        "utils.js",
+        "fixChrome.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
